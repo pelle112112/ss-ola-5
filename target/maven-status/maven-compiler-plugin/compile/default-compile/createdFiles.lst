@@ -1,4 +1,5 @@
 com/kfisk/PersistenceManager.class
 com/kfisk/RouteController.class
 com/kfisk/Task.class
+com/kfisk/RequestValidator.class
 com/kfisk/App.class

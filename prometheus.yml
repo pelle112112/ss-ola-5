@@ -4,4 +4,4 @@ scrape_configs:
   - job_name: "demo-job"
     metrics_path: /metrics
     static_configs:
-      - targets: ["app:7000"]
+      - targets: ["app:7080"]

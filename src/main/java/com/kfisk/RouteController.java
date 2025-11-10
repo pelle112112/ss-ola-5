@@ -10,8 +10,9 @@ public class RouteController {
         private final Connection conn;
         private final PersistenceManager dao = new PersistenceManager();
 
-        public RouteController(Connection conn) {
+        public RouteController(Connection conn) throws Exception {
             this.conn = conn;
+            dao.initDB(conn);
         }
 
         public void getAllTasks(Context ctx) {
