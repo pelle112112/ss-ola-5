@@ -52,5 +52,14 @@ public class RouteController {
                 ctx.status(500).result("Error deleting task");
             }
         }
+        public void metrics(Context ctx) {
+            try{
+                String test = "Test,Hej,Lækkert";
+                ctx.result(test);
+            }
+            catch (Exception e){
+                ctx.status(500).result("Error metrics");
+            }
+        }
 
 }
