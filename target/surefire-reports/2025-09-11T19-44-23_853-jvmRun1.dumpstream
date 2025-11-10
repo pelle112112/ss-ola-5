@@ -1,0 +1,36 @@
+# Created at 2025-09-11T19:44:32.944
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'START Running Jmeter on Thu Sep 11 19:44:32 CEST 2025'.
+
+# Created at 2025-09-11T19:44:32.948
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'JVM_ARGS=-Xmn5308m -Xms21232m -Xmx21232m'.
+
+# Created at 2025-09-11T19:44:32.949
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'jmeter args=-n -t test-plan.jmx -JAPI_HOST=host.docker.internal -JAPI_PORT=32833 -l results.jtl -e -o report -u 1000:1000'.
+
+# Created at 2025-09-11T19:44:35.633
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'jmeter ALL ARGS=-Dlog4j2.formatMsgNoLookups=true -n -t test-plan.jmx -JAPI_HOST=host.docker.internal -JAPI_PORT=32833 -l results.jtl -e -o report -u 1000:1000'.
+
+# Created at 2025-09-11T19:44:35.708
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Creating summariser <summary>'.
+
+# Created at 2025-09-11T19:44:35.720
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Created the tree successfully using test-plan.jmx'.
+
+# Created at 2025-09-11T19:44:35.733
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Starting standalone test @ September 11, 2025 7:44:35 PM CEST (1757612675711)'.
+
+# Created at 2025-09-11T19:44:41.212
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445'.
+
+# Created at 2025-09-11T19:44:41.212
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'summary =  10000 in 00:00:05 = 1970.4/s Avg:     0 Min:     0 Max:    85 Err: 10000 (100.00%)'.
+
+# Created at 2025-09-11T19:44:44.862
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Tidying up ...    @ September 11, 2025 7:44:41 PM CEST (1757612681211)'.
+
+# Created at 2025-09-11T19:44:44.865
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '... end of run'.
+
+# Created at 2025-09-11T19:44:45.172
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'END Running Jmeter on Thu Sep 11 19:44:44 CEST 2025'.
+

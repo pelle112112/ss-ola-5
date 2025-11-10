@@ -1,0 +1,34 @@
+{
+  "Load test 100 users 100 requests each - getAllTasks" : {
+    "transaction" : "Load test 100 users 100 requests each - getAllTasks",
+    "sampleCount" : 10000,
+    "errorCount" : 10000,
+    "errorPct" : 100.0,
+    "meanResTime" : 0.3501000000000005,
+    "medianResTime" : 0.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 85.0,
+    "pct1ResTime" : 1.0,
+    "pct2ResTime" : 1.0,
+    "pct3ResTime" : 7.0,
+    "throughput" : 2101.723413198823,
+    "receivedKBytesPerSec" : 4306.117041364544,
+    "sentKBytesPerSec" : 0.0
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 10000,
+    "errorCount" : 10000,
+    "errorPct" : 100.0,
+    "meanResTime" : 0.3501000000000005,
+    "medianResTime" : 0.0,
+    "minResTime" : 0.0,
+    "maxResTime" : 85.0,
+    "pct1ResTime" : 1.0,
+    "pct2ResTime" : 1.0,
+    "pct3ResTime" : 7.0,
+    "throughput" : 2101.723413198823,
+    "receivedKBytesPerSec" : 4306.117041364544,
+    "sentKBytesPerSec" : 0.0
+  }
+}

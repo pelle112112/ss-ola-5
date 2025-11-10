@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <!-- Testplan tag is a wrapper for everything that is going into the JMeter test plan - basically holding metadata for our test plan alongside some configuration -->
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="API Load Test" enabled="true">
+      <stringProp name="TestPlan.comments">Load test for our Javalin API</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.serialize_threadgroups">false</stringProp>
+    </TestPlan>
+    <hashTree>
+
+      <!-- Thread group is how many concurrent triggers we want - in this case it is the amount of "users" that are sending requests to the API concurently -->
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Users" enabled="true">
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+
+        <!-- LoopController is then how many requests each "user" is sending to our system -->
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController"
+                     guiclass="LoopControlPanel" testclass="LoopController"
+                     testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">100</stringProp>
+        </elementProp>
+      </ThreadGroup>
+      <hashTree>
+
+        <!-- HTTP sampler is the part of the plan that handles where the requests are going and sending them -->
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy"
+                          testname="Load test 100 users 100 requests each - getAllTasks" enabled="true">
+          <!-- In our case everything is on localhost port 7000 -->
+          <stringProp name="HTTPSampler.domain">${__P(API_HOST,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.port">${__P(API_PORT,7000)}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <!-- TODO: insert path for API and request method, alongside giving the test a proper name -->
+          <stringProp name="HTTPSampler.path">/api/getAllTasks</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
