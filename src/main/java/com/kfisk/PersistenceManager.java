@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -15,6 +16,12 @@ import java.util.List;
  * @author kotteletfisk
  */
 public class PersistenceManager {
+
+    public PersistenceManager(){}
+
+    public PersistenceManager(Connection c) throws SQLException {
+        initDB(c);
+    }
 
     public void initDB(Connection c) throws SQLException {
 
@@ -82,5 +89,27 @@ public class PersistenceManager {
             pstmt.setString(1, title);
             pstmt.executeUpdate();
         }
+    }
+
+    public HashMap<String, Integer> getMetrics(Connection c) throws SQLException {
+        String completedStatement = "SELECT COUNT(*) FROM tasks WHERE isCompleted = true";
+        String totalTasksStatement = "SELECT COUNT(*) FROM tasks";
+
+        HashMap<String, Integer> output = new HashMap<>();
+        try (var pstmt = c.prepareStatement(completedStatement)) {
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()) {
+                output.put("completed", rs.getInt("COUNT(*)"));
+            }
+        }
+
+        try (var pstmt = c.prepareStatement(totalTasksStatement)) {
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()) {
+                output.put("total", rs.getInt("COUNT(*)"));
+            }
+        }
+
+        return  output;
     }
 }
