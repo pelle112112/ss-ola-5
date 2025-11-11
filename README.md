@@ -48,8 +48,14 @@ We are using a dockerfile to create the image used for the application and inclu
 
 You can find the monitoring plan [here](documentation/ss-ola-5-sla.pdf).
 
+The prometheus scrape configurations can be found [here](prometheus.yml)
+
 #### Screen dumps of Grafana setup
 
 The grafana dashboard includes the metrics from the SLA alongside the business KPI's with metrics on the left and KPI's on the right.
 
 ![grafana_dump.png](documentation/grafana_dump.png)
+
+#### Screen dumps of prometheus scrape
+
+![prometheus_scrape_dump.png](documentation/prometheus_scrape_dump.png)
