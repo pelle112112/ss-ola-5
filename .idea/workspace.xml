@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="005d8f06-98bc-4c5f-a78f-77af1fddf1f6" name="Changes" comment="Readme update">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="005d8f06-98bc-4c5f-a78f-77af1fddf1f6" name="Changes" comment="Metrics endpoint update">
+      <change afterPath="$PROJECT_DIR$/documentation/grafana_dump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/ss-ola-5-sla.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kfisk/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kfisk/PersistenceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kfisk/RouteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kfisk/RouteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <workItem from="1762774700955" duration="3213000" />
       <workItem from="1762785049311" duration="3288000" />
       <workItem from="1762791936739" duration="1507000" />
-      <workItem from="1762852469551" duration="5432000" />
+      <workItem from="1762852469551" duration="6377000" />
     </task>
     <task id="LOCAL-00001" summary="Readme update">
       <option name="closed" value="true" />
@@ -76,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762776709749</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Metrics endpoint update">
+      <option name="closed" value="true" />
+      <created>1762858105353</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762858105353</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Readme update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme update" />
+    <MESSAGE value="Metrics endpoint update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metrics endpoint update" />
   </component>
 </project>
